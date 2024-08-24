@@ -1,6 +1,5 @@
 import fs from 'node:fs/promises'
 import process from 'node:process'
-import { fileURLToPath } from 'node:url'
 import prompts from 'prompts'
 import { execa } from 'execa'
 

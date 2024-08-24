@@ -8,6 +8,7 @@ transition: slide-left
 mdc: true
 lineNumbers: true
 layout: intro
+favicon: https://jinyuz.dev/favicon.ico
 ---
 
 # Python Metaprogramming
@@ -21,13 +22,11 @@ From Muggle to Wizard
   </span>
 </div>
 
-
 ---
 layout: section
 ---
 
 # <span class="blink text-green500">>_ </span>whoami
-
 
 <style>
 .blink {
@@ -66,7 +65,6 @@ layout: default
 
 </v-clicks>
 
-
 <style>
 ul {
   list-style: disc;
@@ -89,7 +87,6 @@ ul {
 }
 </style>
 
-
 ---
 layout: section
 ---
@@ -102,13 +99,11 @@ transition: slide-left
 
 # Metaprogramming
 
-
 > Metaprogramming is a computer programming technique in which computer programs have the ability
 > to treat other programs as their data. It means that a program can be designed to read, generate,
 > analyse, or transform other programs, and even modify itself, while running.
 >
 > Reference: https://en.wikipedia.org/wiki/Metaprogramming
-
 
 <v-click>
 
@@ -116,13 +111,11 @@ _code that writes code_ at runtime
 
 </v-click>
 
-
 <v-click>
 
 ## So is it AI?
 
 </v-click>
-
 
 <v-click>
 
@@ -137,9 +130,7 @@ NO. Metaprogramming is not AI.
 transition: slide-up
 ---
 
-
 # Metaprogramming
-
 
 <v-clicks>
 
@@ -151,7 +142,6 @@ transition: slide-up
 * Practical use cases
 
 </v-clicks>
-
 
 ---
 transition: slide-up
@@ -174,7 +164,6 @@ transition: slide-up
 
 </v-clicks>
 
-
 <v-click>
 
 <br><br>
@@ -182,9 +171,6 @@ transition: slide-up
 > Please don't use this unless you know what you're doing
 
 </v-click>
-
-
-
 
 ---
 layout: default
@@ -196,7 +182,6 @@ layout: default
 <br>
 
 ````md magic-move {lines: true}
-
 ```python {*|5|*}
 code = """
 def greeter(name):
@@ -225,7 +210,6 @@ layout: default
 <br>
 
 ````md magic-move {lines: true}
-
 ```python {*|2|*}
 result = eval("1+1 * 5")
 print(result)  # Output: 6
@@ -239,7 +223,6 @@ eval(user_input)  # Deletes files if executed
 ```
 ````
 
-
 <br><br>
 
 <div v-click class="text-sm bg-orange-100 border-l-4 border-orange-500 text-orange-700 p-4" role="alert">
@@ -247,18 +230,15 @@ eval(user_input)  # Deletes files if executed
   <p>Avoid using `exec()` and `eval()` in untrusted code environments as they can lead to code injection attacks.</p>
 </div>
 
-
 ---
 layout: section
 ---
 
 # Decorators
 
-
 ---
 
 # Decorators
-
 
 <v-clicks>
 
@@ -268,7 +248,6 @@ layout: section
 
 </v-clicks>
 
-
 ---
 
 # Decorators: Demo
@@ -276,7 +255,6 @@ layout: section
 Decorators using functions
 
 ````md magic-move
-
 ```python {*|3,12|13,4-9|6,9|10|*}
 import time
 
@@ -303,7 +281,6 @@ Successfully fetched user
 function get_user took 3.0004289150238037 second(s).
 ```
 ````
-
 
 ---
 
@@ -334,23 +311,21 @@ print(greeter("Yujin"))
 
 ---
 
-
 # Decorators
 
 Decorators with custom arguments
 
 <div class="bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3" role="alert">
   <p class="font-bold">Code too long!</p>
-  <p class="text-sm">See decorators_with_args.py</p>
+  <p class="text-sm">See <a
+  href="https://github.com/yujinyuz/mubo/blob/demo/decorators_with_args.py" target="_blank">decorators_with_args.py</a></p>
 </div>
 
 ---
 
-
 # Decorators: Demo
 
 Tip: Prefer using `functools.wraps` when creating python decorators
-
 
 * preserves the original function's metadata like name and docstring
 
@@ -359,7 +334,6 @@ layout: default
 ---
 
 # Decorators: Demo
-
 
 Without wraps
 
@@ -422,7 +396,6 @@ layout: section
 
 # Introspection
 
-
 <v-click>
 
 refers to the ability of a program to examine the type or properties of an object at runtime
@@ -446,7 +419,6 @@ methods
 
 </v-clicks>
 
-
 <v-click>
 
 <br><br>
@@ -456,12 +428,9 @@ methods
 
 </v-click>
 
-
-
 ---
 
 # Introspection: Demo
-
 
 ````md magic-move
 ```python
@@ -499,7 +468,6 @@ layout: section
 ---
 
 # Metaclass
-
 
 ---
 
@@ -540,7 +508,6 @@ layout: section
 
 Everything in Python is an object
 
-
 <v-clicks>
 
 * object
@@ -552,14 +519,11 @@ Everything in Python is an object
 
 </v-clicks>
 
-
 ---
 
 # Metaclass
 
-
 `type`
-
 
 <v-clicks>
 
@@ -567,12 +531,9 @@ Everything in Python is an object
 
 </v-clicks>
 
-
 <v-click>
 
-
 ````md magic-move
-
 ```python
 type("Hello, World!")
 ```
@@ -642,9 +603,7 @@ type(type(type(type)))
 ```python
 type(type(type(type)))  # Output: <class 'type'>
 ```
-
 ````
-
 
 </v-click>
 
@@ -656,14 +615,12 @@ type(type(type(type)))  # Output: <class 'type'>
 
 </v-click>
 
-
 <v-clicks>
 
 * class of classes
 * handles the behavior of classes
 
 </v-clicks>
-
 
 <v-click>
 
@@ -672,7 +629,6 @@ type(type(type(type)))  # Output: <class 'type'>
 > Python cheats at the implementation level so `type` belongs to itself
 
 </v-click>
-
 
 ---
 
@@ -693,7 +649,6 @@ same as
 
 </v-click>
 
-
 <v-click>
 
 ```python
@@ -707,7 +662,6 @@ print(Wizard.skills)  # Output: ['fireball', 'ice barrier']
 
 # Metaclass
 
-
 <v-clicks depth="2">
 
 * `type` is a metaclass, the base for all other classes
@@ -717,7 +671,6 @@ print(Wizard.skills)  # Output: ['fireball', 'ice barrier']
 * `class MyClass: ...` -> `type('MyClass', (object, ), {})`
 
 </v-clicks>
-
 
 ---
 
@@ -733,7 +686,6 @@ Internally calls dunder methods. We can override a class to handle non-existing 
 When accessing object properties, `__getattribute__` is called
 </v-click>
 </span>
-
 
 <v-click>
 
@@ -760,7 +712,6 @@ print(bs.year) # Output: AttributeError: Broomstick object has no attribute 'yea
 
 ---
 
-
 # Metaclass
 
 But Python prevents you from doing this
@@ -771,9 +722,7 @@ But Python prevents you from doing this
 type.foo = 'hello'  # Output: TypeError: cannot set 'foo' attribute of immutable type 'type'
 ```
 
-
 </v-click>
-
 
 <v-click>
 or
@@ -782,7 +731,6 @@ or
 setattr(type, 'foo', 'hello')  # Output: Same as above
 ```
 </v-click>
-
 
 <v-click>
 
@@ -819,7 +767,6 @@ class ResourceInitializer(type):
 class BaseResource(metaclass=ResourceInitializer):
     ...
 ```
-
 
 ```python
 class Product(BaseResource):
@@ -919,7 +866,6 @@ inv = InvisibilityPotion()
 ```
 ````
 
-
 ---
 layout: section
 ---
@@ -941,7 +887,6 @@ I was working in a Django project and found these functions being called in the 
 get_\<field\>_display
 
 ````md magic-move
-
 ```python
 class SomeModel(models.Model):
 
@@ -965,11 +910,9 @@ context = {
 
 ---
 
-
 ## What led me here?
 
 I was working in a Django project and found these functions being called in the app:
-
 
 clean_\<field_name\> in Django
 
@@ -989,18 +932,15 @@ validate_\<field_name\> in DRF
 
 <span class="text-sm">
 
-
 called via `Serializer.validate()`
 
 </span>
 
 ---
 
-
 # Metaclass: `type` in action
 
 ````md magic-move
-
 ```python
 from django.db import models
 
@@ -1021,7 +961,6 @@ Project = type(
     }
 )
 ```
-
 
 ```python
 class Table(models.Model):
@@ -1056,8 +995,9 @@ GeneratedModel = type(
 
 # Assuming the PostgreSQL table has already been created using the schema editor.
 GeneratedModel.objects.all()
-```
 
+# Source: https://baserow.io/blog/how-baserow-lets-users-generate-django-models
+```
 
 ```python {*}{startLine:1}
 class AutoHistoryModelSerializerMixin:
@@ -1096,7 +1036,6 @@ def get_serializer_class(self):
     return serializer_class
 ```
 
-
 ```python
 class TagHistoryViewSet(
     AutoHistoryModelSerializerMixin,
@@ -1128,9 +1067,7 @@ layout: section
 
 # Descriptors: Demo
 
-
 ````md magic-move
-
 ```python
 class TinyInteger:
     def __set__(self, instance, value):
@@ -1142,7 +1079,6 @@ class TinyInteger:
         print('__get__ called')
         return instance.__tiny_int
 
-
 class Wizard:
     level = TinyInteger()
 
@@ -1151,19 +1087,16 @@ gandalf.level = 10 # Okay
 print(gandalf.level)  # Output: 10
 gandalf.level = 256 # Output: ValueError: Tiny integers must be less than 255.
 ```
-
 ````
 
 ---
 
 # Descriptors: Demo
 
-
 <div class="bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3" role="alert">
-  <p class="font-bold">Code too long!</p>
-  <p class="text-sm">See demo repository</p>
+  <p class="font-bold">Code too long! </p>
+  <p class="text-sm">See <a href="https://github.com/yujinyuz/mubo/tree/demo/demo.py" target="_blank">demo.py</a></p>
 </div>
-
 
 ---
 
@@ -1181,7 +1114,6 @@ gandalf.level = 256 # Output: ValueError: Tiny integers must be less than 255.
 * Fun experience exploring library code
 
 </v-clicks>
-
 
 ---
 
@@ -1202,13 +1134,11 @@ Rewrite the `paymongo` python SDK! (or any SDK)
 
 </v-clicks>
 
-
 ---
 
 ## Challenge
 
 ````md magic-move
-
 ```python {1-8|11}
 payload = {
     'default_device': 'phone',
@@ -1241,9 +1171,7 @@ except paymongo.exceptions.PaymongoException as exc:
 >>> cust.first_name
 'Pay'
 ```
-
 ````
-
 
 <br><br><br>
 
@@ -1255,27 +1183,25 @@ layout: end
 class: text-center
 ---
 
-
 # Thank you!
 
 ## Let's Connect
 
-
 <div class="flex items-center space-x-4">
   <!-- GitHub -->
-  <a href="https://github.com/yujinyuz" class="flex items-center space-x-2 text-gray-700 hover:text-black">
+  <a href="https://github.com/yujinyuz" target="_blank" class="flex items-center space-x-2 text-gray-700 hover:text-black">
     <i class="i-grommet-icons-github"></i>
     <span>yujinyuz</span>
   </a>
 
-  <!-- Twitter -->
-  <a href="https://twitter.com/yujinyuz_" class="flex items-center space-x-2 text-gray-700 hover:text-blue-500">
-    <i class="i-grommet-icons-twitter text-xl"></i>
-    <span>@yujinyuz_</span>
+  <!-- LinkedIn -->
+  <a href="https://linkedin.com/in/yujinyuz" target="_blank" class="flex items-center space-x-2 text-gray-700 hover:text-blue-500">
+    <i class="i-grommet-icons-linkedin text-xl"></i>
+    <span>yujinyuz</span>
   </a>
 
   <!-- Website -->
-  <a href="https://jinyuz.dev" class="flex items-center space-x-2 text-gray-700 hover:text-green-500">
+  <a href="https://jinyuz.dev" target="_blank" class="flex items-center space-x-2 text-gray-700 hover:text-green-500">
     <i class="i-grommet-icons-link text-xl"></i>
     <span>jinyuz.dev</span>
   </a>
@@ -1284,16 +1210,12 @@ class: text-center
 
 <div class="absolute bottom-10 right-10">
 
-
 ![](/qr.png)
 
 </div>
-
 
 <style>
 a {
   color: #f8f8f8;
 }
 </style>
-
-
