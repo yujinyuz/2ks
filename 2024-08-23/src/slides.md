@@ -8,6 +8,7 @@ transition: slide-left
 mdc: true
 lineNumbers: true
 layout: intro
+routerMode: hash
 favicon: https://jinyuz.dev/favicon.ico
 ---
 
