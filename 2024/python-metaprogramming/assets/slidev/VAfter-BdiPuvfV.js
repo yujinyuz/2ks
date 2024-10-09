@@ -1,0 +1,1 @@
+import{af as i}from"../index-Cz7co0Tu.js";import{d as f,aB as p,v as u,ae as c}from"../modules/vue-B4427qiu.js";const d=f({render(){var r,a;const n=p("after");function o(t,s){return c(t,[[s]])}let e=(a=(r=this.$slots).default)==null?void 0:a.call(r);if(e)return e=i(e),e.map(t=>o(u(t),n))}});export{d as _};
