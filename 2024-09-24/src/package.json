@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build --base /talks/2024/leveraging-pex-files/ --out ../../dist/2024/leveraging-pex-files",
+    "export": "slidev export --output ../2024-09-24-leveraging-pex-files.pdf",
+    "export-ppt": "slidev export --per-slide --format pptx --output ../2024-09-24-leveraging-pex-files.ppt"
+  }
+}
